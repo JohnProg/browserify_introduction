@@ -8,10 +8,11 @@
   },
   "main": "main.js",
   "scripts": {
+    "build": "browserify main.js --debug -t coffeeify -t -p [ minifyify --map bundle.js.map --output build/bundle.map.js ] > build/bundle.js",
+    "clean": "rm -rf build/ && mkdir build/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "beefy main.js --browserify $(which browserify) -t caching-coffeeify --live",
-    "build": "browserify main.js --debug -t coffeeify -t -p [ minifyify --map bundle.js.map --output build/bundle.map.js ] > build/bundle.js",
-    "clean": "rm -rf build/ && mkdir build"
+    "setup": "npm install && npm run clean"
   },
   "author": "Peleke Sengstacke",
   "license": "ISC",

@@ -12,7 +12,6 @@ And:
 
 Then run:
 
-`npm run clean`
-`npm run build`
+`npm setup && npm run build`
 
 If all goes well, you're good to go.
