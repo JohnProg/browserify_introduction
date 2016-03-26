@@ -6,12 +6,8 @@ Run:
 
 `git clone https://github.com/Peleke/browserify_introduction `
 
-And:
+Then:
 
-` npm install `
-
-Then run:
-
-`npm setup && npm run build`
+`npm run setup && npm run build`
 
 If all goes well, you're good to go.
