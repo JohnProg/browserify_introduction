@@ -10,4 +10,9 @@ And:
 
 ` npm install `
 
-Then try `npm run build`. If all goes well, you're good to go.
+Then run:
+
+`npm run clean`
+`npm run build`
+
+If all goes well, you're good to go.
